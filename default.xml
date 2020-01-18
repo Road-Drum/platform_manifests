@@ -3,7 +3,11 @@
   <remote  name="anbox" fetch="https://github.com/anbox/" revision="anbox/master" />  
 
   <remote  name="aosp"
+<<<<<<< HEAD
+           fetch="https://android.googlesource.com/"
+=======
            fetch=".."
+>>>>>>> 0831d39b780ad566b5e23a8473a81f6ce79050f9
            review="https://android-review.googlesource.com/" />
   <default revision="refs/tags/android-7.1.2_r39"
            remote="aosp"
@@ -19,8 +23,13 @@
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
+<<<<<<< HEAD
+  <project path="art" name="platform_art" groups="pdk" remote="anbox" />
+  <project path="bionic" name="platform_bionic" groups="pdk" remote="anbox"/>
+=======
   <project path="art" name="platform/art" groups="pdk" />
   <project path="bionic" name="platform/bionic" groups="pdk" />
+>>>>>>> 0831d39b780ad566b5e23a8473a81f6ce79050f9
   <project path="bootable/recovery" name="platform/bootable/recovery" groups="pdk" />
   <project path="compatibility/cdd" name="platform/compatibility/cdd" groups="pdk" />
   <project path="cts" name="platform/cts" groups="cts,pdk-cw-fs,pdk-fs" />
@@ -35,8 +44,15 @@
   <project path="device/generic/arm64" name="device/generic/arm64" groups="pdk" />
   <project path="device/generic/armv7-a-neon" name="device/generic/armv7-a-neon" groups="pdk" />
   <project path="device/generic/common" name="device/generic/common" groups="pdk" />
+<<<<<<< HEAD
+<!-- disable conflicting goldfish sources  
   <project path="device/generic/goldfish" name="device/generic/goldfish" groups="pdk" />
   <project path="device/generic/goldfish-opengl" name="device/generic/goldfish-opengl" groups="pdk" />
+-->  
+=======
+  <project path="device/generic/goldfish" name="device/generic/goldfish" groups="pdk" />
+  <project path="device/generic/goldfish-opengl" name="device/generic/goldfish-opengl" groups="pdk" />
+>>>>>>> 0831d39b780ad566b5e23a8473a81f6ce79050f9
   <project path="device/generic/mips" name="device/generic/mips" groups="pdk" />
   <project path="device/generic/mips64" name="device/generic/mips64" groups="pdk" />
   <project path="device/generic/mini-emulator-arm64" name="device/generic/mini-emulator-arm64" groups="pdk" />
